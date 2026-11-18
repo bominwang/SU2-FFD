@@ -1,0 +1,21 @@
+{
+  "case": "CRM wing",
+  "input_type": "IGES CAD geometry",
+  "source": "NASA Common Research Model",
+  "page": "https://commonresearchmodel.larc.nasa.gov/geometry/iges-files/",
+  "url": "https://commonresearchmodel.larc.nasa.gov/wp-content/uploads/sites/7/2013/03/DPW4_wb_no_tail_v03.igs_1.gz",
+  "original_filename": "DPW4_wb_no_tail_v03.igs_1.gz",
+  "selected_IGES_directory_entries": [
+    151,
+    155,
+    161,
+    163,
+    167,
+    169,
+    171,
+    173,
+    177
+  ],
+  "note": "The example evaluates the wing CAD patches; it does not extract CFD boundary elements.",
+  "sha256": "5033db500c09a468b1dfb8c5e5142ea2a04e2500af459ae84c004b458b75c037"
+}

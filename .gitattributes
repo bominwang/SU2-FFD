@@ -1,0 +1,4 @@
+# Preserve geometry files and recorded hashes across platforms.
+* -text
+*.py text eol=lf
+*.md text eol=lf

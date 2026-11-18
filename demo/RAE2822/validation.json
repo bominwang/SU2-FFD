@@ -1,0 +1,94 @@
+{
+  "case": "RAE2822",
+  "status": "passed",
+  "scope": "baseline geometry and FFD embedding",
+  "generated_at_utc": "2026-11-18T07:40:30.128175+00:00",
+  "source": {
+    "geometry_files": [
+      "Engineering/RAE2822/MESH/geometry/RAE2822_lower.txt",
+      "Engineering/RAE2822/MESH/geometry/RAE2822_upper.txt"
+    ],
+    "geometry_variant": "Existing normalized blunt-trailing-edge geometry",
+    "local_transformations": "Copy the existing geometry files unchanged; read x,y and assemble a closed plotting boundary."
+  },
+  "input_sha256": {
+    "lower.txt": "6eee473bac7233fb3de653c17b9c3644bb5689a3a73e8cc9330c505d62d042d6",
+    "upper.txt": "44bff8c527d7e06cf71339d59a031a16b33f21d56e2bcaaca6f202cca3d5c1d2"
+  },
+  "generation_backend": "pygeo.geo_utils.createFittedWingFFD",
+  "versions": {
+    "pygeo": "1.17.0",
+    "pyspline": "1.5.4",
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.7"
+  },
+  "python_executable": "/home/bomin/miniconda3/envs/JAX_Bayes/bin/python",
+  "generation_parameters": {
+    "n_chord": 14,
+    "x_margin": 0.001,
+    "thickness_margin": 0.02,
+    "relative_thickness_margin": 0.05,
+    "chord_inset_fraction": 0.0001
+  },
+  "control_shape": [
+    14,
+    2,
+    2
+  ],
+  "control_point_count": 56,
+  "spline_orders": [
+    4,
+    2,
+    2
+  ],
+  "lower_surface_input_points": 385,
+  "upper_surface_input_points": 385,
+  "boundary_input_points_tested": 770,
+  "unique_boundary_points_tested": 769,
+  "trailing_edge_thickness_over_chord": 0.00037390035204773095,
+  "maximum_embedding_error_over_chord": 1.191269305422793e-13,
+  "parameter_min": [
+    0.0003507484720164887,
+    0.14632765018237584,
+    0.49999999999999994
+  ],
+  "parameter_max": [
+    0.999649262343173,
+    0.8511601333889603,
+    0.5000000000000001
+  ],
+  "jacobian_samples": 1755,
+  "minimum_sampled_jacobian_determinant": 0.07858463824447791,
+  "minimum_sampled_scaled_jacobian": 0.9056848486762032,
+  "checks": {
+    "all_boundary_points_embedded": true,
+    "all_parameters_inside": true,
+    "positive_sampled_jacobians": true,
+    "nonsingular_sampled_jacobians": true,
+    "upper_controls_above_lower": true,
+    "identical_xy_in_virtual_planes": true,
+    "su2_virtual_z_planes": true,
+    "geometry_inputs_unchanged": true
+  },
+  "figure": {
+    "files": [
+      "ffd.png",
+      "ffd.svg"
+    ],
+    "size_inches": [
+      10,
+      3.6
+    ],
+    "png_dpi": 300,
+    "font": "Times New Roman",
+    "lattice_color": "#002FA7",
+    "equal_coordinate_scale": true,
+    "shown_plane": "z/c=-0.5; the +0.5 plane has identical xy coordinates"
+  },
+  "output_sha256": {
+    "ffd.xyz": "744fffead7261097f1bcdf1e5909f8d5504e95a1633129cefee982e142bfee38",
+    "ffd.png": "d7892378a5f2c82009b82c47c04a541f21f8c57a5a925d2c344919f1e6e66977",
+    "ffd.svg": "8b778f3331ca34f8fb41a8e2d2c5df2c8891a5ff81c40f4ca3e5df44edf745df"
+  }
+}

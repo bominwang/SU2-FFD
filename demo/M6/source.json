@@ -1,0 +1,10 @@
+{
+  "case": "ONERA M6",
+  "input_type": "IGES CAD geometry",
+  "source_repository": "mdolab/MACH-Aero",
+  "commit": "075d1b64da4a65fb25b0bc54f6041884343aff0c",
+  "path": "tutorial/overset/geo/onera_m6.igs",
+  "url": "https://github.com/mdolab/MACH-Aero/blob/075d1b64da4a65fb25b0bc54f6041884343aff0c/tutorial/overset/geo/onera_m6.igs",
+  "sha256": "528fddfdcb4f2238a85ab2930cba9f1350b7612116a6b3529cde105b84ced023",
+  "authoring": "OpenVSP 3.21.2 / libIGES"
+}

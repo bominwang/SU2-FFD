@@ -1,0 +1,286 @@
+{
+  "case": "CRM",
+  "status": "passed",
+  "scope": "baseline CAD and sampled FFD embedding",
+  "generated_at_utc": "2026-11-18T08:23:21.990380+00:00",
+  "source": {
+    "case": "CRM wing",
+    "input_type": "IGES CAD geometry",
+    "source": "NASA Common Research Model",
+    "page": "https://commonresearchmodel.larc.nasa.gov/geometry/iges-files/",
+    "url": "https://commonresearchmodel.larc.nasa.gov/wp-content/uploads/sites/7/2013/03/DPW4_wb_no_tail_v03.igs_1.gz",
+    "original_filename": "DPW4_wb_no_tail_v03.igs_1.gz",
+    "selected_IGES_directory_entries": [
+      151,
+      155,
+      161,
+      163,
+      167,
+      169,
+      171,
+      173,
+      177
+    ],
+    "note": "The example evaluates the wing CAD patches; it does not extract CFD boundary elements.",
+    "sha256": "5033db500c09a468b1dfb8c5e5142ea2a04e2500af459ae84c004b458b75c037"
+  },
+  "input_sha256": {
+    "geometry.igs.gz": "5033db500c09a468b1dfb8c5e5142ea2a04e2500af459ae84c004b458b75c037"
+  },
+  "geometry": {
+    "origin_original_units": [
+      992.83239,
+      120.252,
+      175.83109
+    ],
+    "uniform_length_scale": 465.85430999999994,
+    "coordinates": "(original - origin) / exposed_root_chord",
+    "surface_representation": "direct rational IGES CAD tessellation",
+    "sampled_patch_shapes": [
+      [
+        25,
+        97
+      ],
+      [
+        3,
+        33
+      ],
+      [
+        25,
+        97
+      ],
+      [
+        25,
+        97
+      ],
+      [
+        3,
+        33
+      ],
+      [
+        9,
+        97
+      ],
+      [
+        9,
+        97
+      ],
+      [
+        3,
+        33
+      ],
+      [
+        25,
+        97
+      ]
+    ]
+  },
+  "cad_patches": [
+    {
+      "entity": 151,
+      "domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "declared_domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "entity": 155,
+      "domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "declared_domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "entity": 161,
+      "domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "declared_domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "entity": 163,
+      "domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "declared_domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "entity": 167,
+      "domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "declared_domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "entity": 169,
+      "domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "declared_domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "entity": 171,
+      "domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "declared_domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "entity": 173,
+      "domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "declared_domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "entity": 177,
+      "domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "declared_domain": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "generation_parameters": {
+    "n_span": [
+      4,
+      6
+    ],
+    "n_chord": 8,
+    "absolute_margins": [
+      0.035,
+      0.055,
+      0.025
+    ],
+    "relative_margins": [
+      0.01,
+      0.0,
+      0.05
+    ],
+    "lift_index": 3
+  },
+  "backend": "pygeo.geo_utils.createFittedWingFFD",
+  "versions": {
+    "pygeo": "1.17.0",
+    "pyspline": "1.5.4"
+  },
+  "python_executable": "/home/bomin/miniconda3/envs/JAX_Bayes/bin/python",
+  "control_shape": [
+    8,
+    10,
+    2
+  ],
+  "spline_orders": [
+    4,
+    2,
+    2
+  ],
+  "CAD_sample_points": 11717,
+  "projection_triangles": 21886,
+  "maximum_embedding_error": 6.9533268032273554e-12,
+  "jacobian_samples": 3069,
+  "minimum_sampled_jacobian": 0.037104442675971266,
+  "minimum_sampled_scaled_jacobian": 0.765802682681853,
+  "checks": {
+    "all_CAD_sample_points_embedded": true,
+    "all_parameters_inside": true,
+    "positive_sampled_jacobians": true,
+    "nonsingular_sampled_jacobians": true
+  },
+  "figure": {
+    "projection": "orthographic",
+    "physical_axis_scales": "equal",
+    "camera_elevation_degrees": 28,
+    "camera_azimuth_degrees": -25,
+    "camera_roll_degrees": 25,
+    "control_color": "#002FA7",
+    "enclosure_opacity": 0.12,
+    "surface_grid": "none; wing outlines and root/tip profiles only",
+    "surface_outline_curves": 16,
+    "files": [
+      "ffd.png",
+      "ffd.svg"
+    ],
+    "size_inches": [
+      9,
+      6.4
+    ],
+    "png_dpi": 300
+  },
+  "output_sha256": {
+    "ffd.xyz": "d56492de228481605d28ad3893f42ad12ea378d5c494af21083188dad667e163",
+    "ffd.png": "cda9ad1719b1e535131969683d61c1bffcefbb8bf123047545f0adc7c5943d9b",
+    "ffd.svg": "1e07416dc3c32fbd35690430bec637637f201127fa974e3cb2760a34613a1079"
+  }
+}
